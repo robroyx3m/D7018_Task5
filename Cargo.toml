@@ -1,0 +1,13 @@
+[package]
+authors = ["Carl B"]
+name = "Assignment_5"
+version = "0.1.1"
+
+[dependencies]
+cortex_m = "0.3.0"
+cortex-m-rtfm = "0.2.0"
+blue_pill = "0.4.1"
+
+[profile.release]
+debug = true
+lto = true

@@ -1,1 +1,11 @@
+CPU monitor by Japaric 
 https://github.com/japaric/embedded-in-rust/blob/master/content/cpu-monitor.md
+
+Bluepill layout
+http://wiki.stm32duino.com/images/a/ae/Bluepillpinout.gif
+
+Bluepill support crate
+https://japaric.github.io/blue-pill/blue_pill/
+
+Bluepill examples
+https://github.com/japaric/blue-pill/tree/master/examples

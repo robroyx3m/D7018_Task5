@@ -1,6 +1,6 @@
 # D7018 Task 5
 
-## Implementation of three different tasks to be run on the STM32F103C8T6 (Bluepill) microprocessor.
+## Implementation of three different tasks to be run on the STM32F401 microprocessor, Nucleo-64 development board.
 
 * A periodic task executing each Xms (free of accumulated drift, and with minimal jitter), that blinks the on-board LED.
 * A USART task receiving commands (pause, start, period 1-1000ms), received commands should be parsed and corresponding responses generated and sent over the USART. (Come up with a nice and simple user interface.)

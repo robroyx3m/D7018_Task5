@@ -29,8 +29,8 @@
         },
         {
             "type": "shell",
-            "label": "xargo build --example loop",
-            "command": "xargo build --example loop",
+            "label": "xargo build --example blink_led",
+            "command": "xargo build --example  blink_led",
             "problemMatcher": [
                 "$rustc"
             ],
@@ -41,8 +41,8 @@
         },
         {
             "type": "shell",
-            "label": "xargo build --example gpio",
-            "command": "xargo build --example gpio",
+            "label": "xargo build --example cpu_usage_over_itm",
+            "command": "xargo build --example cpu_usage_over_itm",
             "problemMatcher": [
                 "$rustc"
             ],
@@ -51,101 +51,17 @@
                 "isDefault": true
             }
         },
-        {
-            "type": "shell",
-            "label": "xargo build --example gpio_raw",
-            "command": "xargo build --example gpio_raw",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare0",
-            "command": "xargo build --example bare0",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare1",
-            "command": "xargo build --example bare1",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare2",
-            "command": "xargo build --example bare2",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare3",
-            "command": "xargo build --example bare3",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare4",
-            "command": "xargo build --example bare4",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare5",
-            "command": "xargo build --example bare5",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "xargo build --example bare6",
-            "command": "xargo build --example bare6",
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
+    {
+        "type": "shell",
+        "label": "xargo build --example usart",
+        "command": "xargo build --example usart",
+        "problemMatcher": [
+            "$rustc"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    },
     ]
 }

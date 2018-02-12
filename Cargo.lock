@@ -3,6 +3,7 @@ name = "Assignment_5"
 version = "0.1.1"
 dependencies = [
  "cortex-m 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-rt 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "cortex-m-rtfm 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "f4 0.1.0 (git+https://github.com/jsjolund/f4)",
  "rtfm-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -8,6 +8,10 @@ cortex-m-rtfm = "0.2.2"
 cortex-m = "0.3.1"
 rtfm-core = "0.1.0"
 
+[dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.3"
+
 [dependencies.f4]
 git = "https://github.com/jsjolund/f4"
 version = "0.1.0"

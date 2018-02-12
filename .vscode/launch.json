@@ -46,7 +46,7 @@
             "request": "attach",
             "name": "Debug blink_led",
             "gdbpath": "/usr/bin/arm-none-eabi-gdb",
-            "executable": "./target/thumbv7em-none-eabihf/debug/test_func/blink_led",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/blink_led",
             "target": ":3333",
             "remote": true,
             "autorun": [
@@ -64,7 +64,7 @@
             "request": "attach",
             "name": "Debug usart",
             "gdbpath": "/usr/bin/arm-none-eabi-gdb",
-            "executable": "./target/thumbv7em-none-eabihf/debug/test_func/usart",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/usart",
             "target": ":3333",
             "remote": true,
             "autorun": [
@@ -82,7 +82,7 @@
             "request": "attach",
             "name": "Debug cpu_usage_over_itm",
             "gdbpath": "/usr/bin/arm-none-eabi-gdb",
-            "executable": "./target/thumbv7em-none-eabihf/debug/test_func/cpu_usage_over_itm",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/cpu_usage_over_itm",
             "target": ":3333",
             "remote": true,
             "autorun": [

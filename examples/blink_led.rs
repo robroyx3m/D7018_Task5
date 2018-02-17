@@ -36,7 +36,7 @@ fn init(p: init::Peripherals, _r: init::Resources) {
     led::init(p.GPIOA, p.RCC);
 
     p.SYST.set_clock_source(SystClkSource::Core);
-    p.SYST.set_reload(16_000_000 / FREQUENCY); // Sets blink freq.
+    p.SYST.set_reload(64_000_000 / FREQUENCY); // Sets blink freq.
     p.SYST.enable_interrupt();
     p.SYST.enable_counter();
 }

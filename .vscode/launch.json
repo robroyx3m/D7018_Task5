@@ -8,7 +8,7 @@
         {
             "type": "gdb",
             "request": "attach",
-            "name": "Debug",
+            "name": "Debug main",
             "gdbpath": "/usr/bin/arm-none-eabi-gdb",
             "executable": "./target/thumbv7em-none-eabihf/debug/task5",
             "target": ":3333",
@@ -26,7 +26,7 @@
         {
             "type": "gdb",
             "request": "attach",
-            "name": "Release",
+            "name": "Release main",
             "gdbpath": "/usr/bin/arm-none-eabi-gdb",
             "executable": "./target/thumbv7em-none-eabihf/release/task5",
             "target": ":3333",
@@ -93,6 +93,146 @@
                 "load",
                 "monitor reset init"
             ],
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "C Debug blink_led",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/blink_led",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 64000000,
+                "swoFrequency": 2000000, // you may try 1000000 if not working
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "Name",
+                        "port": 0
+                    }
+                ]
+            },
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "C Debug usart",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/usart",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 64000000,
+                "swoFrequency": 2000000, // you may try 1000000 if not working
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "Name",
+                        "port": 0
+                    }
+                ]
+            },
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "C Debug cpu_usage_over_itm",
+            "executable": "./target/thumbv7em-none-eabihf/debug/examples/cpu_usage_over_itm",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 64000000,
+                "swoFrequency": 2000000, // you may try 1000000 if not working
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "Name",
+                        "port": 0
+                    }
+                ]
+            },
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "C Debug release task5",
+            "executable": "./target/thumbv7em-none-eabihf/release/task5",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 64000000,
+                "swoFrequency": 2000000, // you may try 1000000 if not working
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "Name",
+                        "port": 0
+                    }
+                ]
+            },
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "name": "C Debug task5",
+            "executable": "./target/thumbv7em-none-eabihf/debug/task5",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init"
+            ],
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 64000000,
+                "swoFrequency": 2000000, // you may try 1000000 if not working
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "Name",
+                        "port": 0
+                    }
+                ]
+            },
             "cwd": "${workspaceRoot}"
         },
     ]

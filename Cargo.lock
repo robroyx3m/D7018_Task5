@@ -3,10 +3,12 @@ name = "Assignment_5"
 version = "0.1.1"
 dependencies = [
  "cortex-m 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-debug 0.1.1 (git+https://gitlab.henriktjader.com/pln/cortex-m-debug.git)",
  "cortex-m-rt 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "cortex-m-rtfm 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "f4 0.1.0 (git+https://github.com/jsjolund/f4)",
  "rtfm-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "stm32f40x 0.2.0 (git+https://gitlab.henriktjader.com/pln/STM32F40x)",
 ]
 
 [[package]]
@@ -73,6 +75,11 @@ dependencies = [
  "bare-metal 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "volatile-register 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "cortex-m-debug"
+version = "0.1.1"
+source = "git+https://gitlab.henriktjader.com/pln/cortex-m-debug.git#e11f6995bc0b2b67e7f8937f831118a7e578c145"
 
 [[package]]
 name = "cortex-m-rt"
@@ -352,6 +359,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum cfg-if 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "d4c819a1287eb618df47cc647173c5c4c66ba19d888a6e50d605672aed3140de"
 "checksum chrono 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "7c20ebe0b2b08b0aeddba49c609fe7957ba2e33449882cb186a180bc60682fa9"
 "checksum cortex-m 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "4d553ca1f23403c81e6d3d28a64ef6e8eadd7f395195aacda65cbc0dc987738e"
+"checksum cortex-m-debug 0.1.1 (git+https://gitlab.henriktjader.com/pln/cortex-m-debug.git)" = "<none>"
 "checksum cortex-m-rt 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)" = "81ca9ab7573d2655a34950830c08a20f9da7772c8a2039cf5424b40e10a88cbd"
 "checksum cortex-m-rtfm 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "332e1afc54913eafaf8bd8575179a1fad5fd9bfcabf45a7f2b1ffcdd7db6ff05"
 "checksum cortex-m-rtfm-macros 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "06e9ac4d399aa1d0e81562d7a34f6d8bf117a68b40fe8cd906b09b16c15ac58d"

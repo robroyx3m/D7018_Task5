@@ -4,13 +4,21 @@ name = "Assignment_5"
 version = "0.1.1"
 
 [dependencies]
-cortex-m-rtfm = "0.2.2"
+cortex-m-rtfm = "0.2.0"
 cortex-m = "0.3.1"
 rtfm-core = "0.1.0"
 
 [dependencies.cortex-m-rt]
 features = ["abort-on-panic"]
 version = "0.3.3"
+
+[dependencies.cortex-m-debug]
+version = "0.1.0"
+git = "https://gitlab.henriktjader.com/pln/cortex-m-debug.git"
+
+[dependencies.stm32f40x]
+features = ["rt"] # see comment above
+git = "https://gitlab.henriktjader.com/pln/STM32F40x"
 
 [dependencies.f4]
 git = "https://github.com/jsjolund/f4"
